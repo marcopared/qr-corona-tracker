@@ -1,0 +1,2 @@
+rootProject.name='QR_Corona Tracker'
+include ':app'
