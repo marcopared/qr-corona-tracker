@@ -88,7 +88,7 @@ qrcoronatrackerapp/*.iws
 ## Plugin-specific files:
 
 # IntelliJ
-qrcoronatrackerapp//out/
+qrcoronatrackerapp/out/
 
 # mpeltonen/sbt-idea plugin
 qrcoronatrackerapp/.idea_modules/
@@ -112,7 +112,7 @@ qrcoronatrackerapp/*.ipr
 
 ### Gradle ###
 qrcoronatrackerapp/.gradle
-qrcoronatrackerapp//build/
+qrcoronatrackerapp/build/
 
 # Ignore Gradle GUI config
 qrcoronatrackerapp/gradle-app.setting
