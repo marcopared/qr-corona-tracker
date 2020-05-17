@@ -1,17 +1,4 @@
-/**
- * Represents a QR Scanner
- * <p>
- *     Note: Need to add dependencies:
- *              'implementation 'com.budiyev.android:code-scanner:2.1.0'' and
- *              'implementation 'com.karumi:dexter:6.0.0''
- *           under 'dependencies' in 'build.gradle; in order to build the project, then sync project
- * </p>
- * @author: Marco Paredes
- * @version: 1.0.0
- * @since 1.0
- */
-
-package com.example.qr_corona_tracker_app;
+package com.example.qrtest;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.Manifest;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.PermissionRequest;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,47 +17,39 @@ import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;
 import com.karumi.dexter.listener.PermissionGrantedResponse;
+import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.single.PermissionListener;
 
 public class Scanner extends AppCompatActivity {
     CodeScanner codeScanner;
     CodeScannerView scannView;
     TextView resultData;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanner);
-
-        // Create Scanner objects based on dependencies
         scannView = findViewById(R.id.scannerView);
         codeScanner = new CodeScanner(this,scannView);
-        resultData = findViewById(R.id.resultQR);
+        resultData = findViewById(R.id.resultsOfQr);
 
-        // Used to get QR results, can access with Result result
         codeScanner.setDecodeCallback(new DecodeCallback() {
             @Override
             public void onDecoded(@NonNull final Result result) {
-
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        resultData.setText(result.getText());
+                        resultData.setText(result.getText().toString());
                     }
                 });
-
             }
         });
-
-
-        scannView.setOnClickListener(new View.OnClickListener() {
+        /*scannView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 codeScanner.startPreview();
             }
-        });
+        });*/
     }
-
     @Override
     protected void onResume() {
         super.onResume();
@@ -79,9 +57,7 @@ public class Scanner extends AppCompatActivity {
 
     }
 
-    /**
-     * Asks user permission to access camera to scan QR
-     */
+
     public void requestForCamera() {
         Dexter.withActivity(this).withPermission(Manifest.permission.CAMERA).withListener(new PermissionListener() {
             @Override
@@ -95,11 +71,11 @@ public class Scanner extends AppCompatActivity {
             }
 
             @Override
-            public void onPermissionRationaleShouldBeShown(com.karumi.dexter.listener.PermissionRequest permission, PermissionToken token) {
+            public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
                 token.continuePermissionRequest();
+
             }
         }).check();
     }
-
 
 }
