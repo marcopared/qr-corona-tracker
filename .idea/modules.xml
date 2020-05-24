@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/QR_Test.iml" filepath="$PROJECT_DIR$/.idea/modules/QR_Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/qr-corona-tracker.iml" filepath="$PROJECT_DIR$/.idea/qr-corona-tracker.iml" />
     </modules>
   </component>

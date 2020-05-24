@@ -43,12 +43,12 @@ public class Scanner extends AppCompatActivity {
                 });
             }
         });
-        /*scannView.setOnClickListener(new View.OnClickListener() {
+        scannView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 codeScanner.startPreview();
             }
-        });*/
+        });
     }
     @Override
     protected void onResume() {

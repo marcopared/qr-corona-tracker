@@ -1,2 +1,2 @@
 rootProject.name='QR Test'
-include ':qr-corona-tracker'
+include ':app'
