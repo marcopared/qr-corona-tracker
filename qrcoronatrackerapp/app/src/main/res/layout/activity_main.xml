@@ -35,4 +35,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/qrPlaceHolder"
         android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/faq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAQ"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="6dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,7 @@ import com.google.zxing.WriterException;
 
 public class MainActivity extends AppCompatActivity {
     EditText qrvalue;
-    Button generateBtn,scanBtn;
+    Button faq,scanBtn;
     ImageView qrImage;
 
     @Override
@@ -26,7 +26,14 @@ public class MainActivity extends AppCompatActivity {
         scanBtn = findViewById(R.id.scanBtn);
         qrImage = findViewById(R.id.qrPlaceHolder);
 
+        faq = findViewById(R.id.faq);
 
+        faq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),ScrollingActivity.class));
+            }
+        });
 
         scanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,8 +41,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),Scanner.class));
             }
         });
-
-
-
     }
 }
