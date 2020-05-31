@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         faq.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View vv) {
                 startActivity(new Intent(getApplicationContext(),ScrollingActivity.class));
             }
         });
