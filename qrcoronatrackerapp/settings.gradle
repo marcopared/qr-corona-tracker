@@ -1,2 +1,2 @@
-rootProject.name='QR Test'
+rootProject.name='qr-corona-tracker-app'
 include ':app'

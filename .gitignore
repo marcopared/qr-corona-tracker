@@ -1,14 +1,3 @@
-qrcoronatrackerapp/*.iml
-qrcoronatrackerapp/.gradle
-qrcoronatrackerapp/local.properties
-qrcoronatrackerapp/.idea/workspace.xml
-qrcoronatrackerapp/.idea/libraries
-qrcoronatrackerapp/.idea
-qrcoronatrackerapp/.DS_Store
-qrcoronatrackerapp/build
-qrcoronatrackerapp/captures
-qrcoronatrackerapp/.externalNativeBuild
-
 # Created by https://www.gitignore.io/api/android,intellij+iml,gradle
 
 ### Android ###
@@ -103,10 +92,10 @@ qrcoronatrackerapp/crashlytics-build.properties
 qrcoronatrackerapp/fabric.properties
 
 ### Intellij+iml Patch ###
-# Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023 
+# Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
 
 qrcoronatrackerapp/modules.xml
-qrcoronatrackerapp/.idea/misc.xml 
+qrcoronatrackerapp/.idea/misc.xml
 qrcoronatrackerapp/*.ipr
 
 
