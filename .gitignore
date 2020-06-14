@@ -1,14 +1,3 @@
-qrcoronatrackerapp/*.iml
-qrcoronatrackerapp/.gradle
-qrcoronatrackerapp/local.properties
-qrcoronatrackerapp/.idea/workspace.xml
-qrcoronatrackerapp/.idea/libraries
-qrcoronatrackerapp/.idea
-qrcoronatrackerapp/.DS_Store
-qrcoronatrackerapp/build
-qrcoronatrackerapp/captures
-qrcoronatrackerapp/.externalNativeBuild
-
 # Created by https://www.gitignore.io/api/android,intellij+iml,gradle
 
 ### Android ###
