@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.example.qrtest"
+        applicationId "com.example.qr_corona_tracker_app"
         minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
