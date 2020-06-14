@@ -1,4 +1,4 @@
-package com.example.qrtest;
+package com.example.qr_corona_tracker_app;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.qrtest", appContext.getPackageName());
+        assertEquals("com.example.qr_corona_tracker_app", appContext.getPackageName());
     }
 }
