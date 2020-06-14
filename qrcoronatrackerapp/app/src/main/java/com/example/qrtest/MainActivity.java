@@ -1,4 +1,4 @@
-package com.example.qrtest;
+package com.example.qr_corona_tracker_app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,7 +14,7 @@ import com.google.zxing.WriterException;
 
 public class MainActivity extends AppCompatActivity {
     EditText qrvalue;
-    Button generateBtn,scanBtn;
+    Button generateBtn, scanBtn;
     ImageView qrImage;
 
     @Override
@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        scanBtn = findViewById(R.id.scanBtn);
+        scanBtn = findViewById(R.id.scanBtn); // Set scanBtn to button on screen
         qrImage = findViewById(R.id.qrPlaceHolder);
 
 
-
+        // Generate an action for clicking button
         scanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
