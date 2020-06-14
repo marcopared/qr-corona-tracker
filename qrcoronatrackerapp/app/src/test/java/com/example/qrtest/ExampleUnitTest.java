@@ -1,4 +1,4 @@
-package com.example.qrtest;
+package com.example.qr_corona_tracker_app;
 
 import org.junit.Test;
 
