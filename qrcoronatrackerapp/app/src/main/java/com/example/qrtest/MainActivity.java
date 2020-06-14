@@ -4,6 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import android.widget.Toast;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     EditText qrvalue;
     Button generateBtn, scanBtn;
     ImageView qrImage;
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference ref = database.getReference();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

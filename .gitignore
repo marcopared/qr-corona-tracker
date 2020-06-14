@@ -92,10 +92,10 @@ qrcoronatrackerapp/crashlytics-build.properties
 qrcoronatrackerapp/fabric.properties
 
 ### Intellij+iml Patch ###
-# Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023 
+# Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
 
 qrcoronatrackerapp/modules.xml
-qrcoronatrackerapp/.idea/misc.xml 
+qrcoronatrackerapp/.idea/misc.xml
 qrcoronatrackerapp/*.ipr
 
 

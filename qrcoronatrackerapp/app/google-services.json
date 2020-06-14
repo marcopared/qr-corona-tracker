@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "766087999820",
+    "firebase_url": "https://qr-tracker-3060b.firebaseio.com",
+    "project_id": "qr-tracker-3060b",
+    "storage_bucket": "qr-tracker-3060b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766087999820:android:f4d871e5a39fd7a3fe1fe9",
+        "android_client_info": {
+          "package_name": "com.example.qr_corona_tracker_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "766087999820-8gvsipdc02rtadc7cu4mnlvls6l038l3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.qr_corona_tracker_app",
+            "certificate_hash": "6cb1b246051d2afb3d664df556d89d37b2d76faa"
+          }
+        },
+        {
+          "client_id": "766087999820-jk256on2cg1oit881lvvauqm53koigsk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjrkQbFtLdKJ2MBUjHdvjCRkn-s-0Qp8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "766087999820-jk256on2cg1oit881lvvauqm53koigsk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
