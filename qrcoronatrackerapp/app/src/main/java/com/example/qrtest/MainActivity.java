@@ -19,7 +19,7 @@ import com.google.zxing.WriterException;
 
 public class MainActivity extends AppCompatActivity {
     EditText qrvalue;
-    Button generateBtn, scanBtn;
+    Button generateBtn, faq, scanBtn;
     ImageView qrImage;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference ref = database.getReference();
@@ -33,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
         scanBtn = findViewById(R.id.scanBtn); // Set scanBtn to button on screen
         qrImage = findViewById(R.id.qrPlaceHolder);
 
+        faq = findViewById(R.id.faq);
+
+        // Generate an action for clicking button
+        faq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View vv) {
+                startActivity(new Intent(getApplicationContext(),ScrollingActivity.class));
+            }
+        });
 
         // Generate an action for clicking button
         scanBtn.setOnClickListener(new View.OnClickListener() {
@@ -41,8 +50,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),Scanner.class));
             }
         });
-
-
-
     }
 }
