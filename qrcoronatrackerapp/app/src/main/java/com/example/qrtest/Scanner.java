@@ -1,4 +1,17 @@
-package com.example.qrtest;
+/**
+ * Represents a QR Scanner
+ * <p>
+ *     Note: Need to add dependencies:
+ *              'implementation 'com.budiyev.android:code-scanner:2.1.0'' and
+ *              'implementation 'com.karumi:dexter:6.0.0''
+ *           under 'dependencies' in 'build.gradle; in order to build the project, then sync project
+ * </p>
+ * @author: Ravi Johnson
+ * @version: 1.0.0
+ * @since 1.0
+ */
+
+package com.example.qr_corona_tracker_app;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,7 +42,10 @@ public class Scanner extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanner);
         scannView = findViewById(R.id.scannerView);
+        
+        // Create Scanner objects based on dependencies
         codeScanner = new CodeScanner(this,scannView);
+        
         resultData = findViewById(R.id.resultsOfQr);
 
         codeScanner.setDecodeCallback(new DecodeCallback() {
@@ -58,6 +74,9 @@ public class Scanner extends AppCompatActivity {
     }
 
 
+    /**
+    * Asks user permission to access camera to scan QR
+    */
     public void requestForCamera() {
         Dexter.withActivity(this).withPermission(Manifest.permission.CAMERA).withListener(new PermissionListener() {
             @Override
