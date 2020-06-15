@@ -17,6 +17,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import com.example.qr_corona_tracker_app.CircularProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -35,23 +36,22 @@ public class Splash extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         // Create and begin circular progress bar
-        progressBar = (CircularProgressBar)findViewById(R.id.custom_progressBar);
+        progressBar = findViewById(R.id.custom_progressBar);
         progressBar.setProgress(0);
 
         final long period = 100; // long variable used to set time limit of progress bar
         timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
-            public void run() {
-                // This repeats every 100 ms
+            public void run() { // Run function repeats every 100 ms
+                // Variable progress gets updated every 100 ms until it reaches 100
                 if (progress < 100) {
                     progressBar.setProgress(progress);
-                    ++progress;
-                } else {
-                    // Closing the timer
+                    progress += 2;
+                } else { // Reached end of progress
                     timer.cancel();
-                    Intent intent = new Intent(Splash.this, MainActivity.class);
-                    startActivity(intent);
+                    // Will transition to MainActivity
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
                     finish(); // Close this activity
                 }
             }
