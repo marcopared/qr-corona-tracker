@@ -7,7 +7,7 @@
  *           under 'dependencies' in 'build.gradle; in order to build the project, then sync project
  * </p>
  * @author: Ravi Johnson
- * @version: 1.0.0
+ * @version: 1.1.0
  * @since 1.0
  */
 
