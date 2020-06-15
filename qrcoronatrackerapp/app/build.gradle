@@ -21,6 +21,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    useLibrary 'org.apache.http.legacy'
+    import android.os.Bundle
+    import android.support.v7.app.ActionBarActivity
+    import android.view.Menu
+    import android.view.MenuItem
+    import android.webkit.WebView
 
 }
 
