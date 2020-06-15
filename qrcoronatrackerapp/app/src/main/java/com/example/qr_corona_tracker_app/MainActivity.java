@@ -2,19 +2,15 @@ package com.example.qr_corona_tracker_app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import android.widget.Toast;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-
-import com.google.zxing.WriterException;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -39,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         faq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View vv) {
-                startActivity(new Intent(getApplicationContext(),ScrollingActivity.class));
+                startActivity(new Intent(getApplicationContext(), ScrollingActivity.class));
             }
         });
 
@@ -47,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         scanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Scanner.class));
+                startActivity(new Intent(getApplicationContext(), com.example.qr_corona_tracker_app.Scanner.class));
             }
         });
     }
