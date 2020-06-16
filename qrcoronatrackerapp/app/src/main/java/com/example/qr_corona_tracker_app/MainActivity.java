@@ -15,7 +15,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     EditText qrvalue;
-    Button generateBtn, faq, scanBtn;
+    Button faqBtn, scanBtn, twitterBtn;
     ImageView qrImage;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference ref = database.getReference();
@@ -26,15 +26,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        scanBtn = findViewById(R.id.scanBtn); // Set scanBtn to button on screen
+        scanBtn = findViewById(R.id.scanBtn);
         qrImage = findViewById(R.id.qrPlaceHolder);
-
-        faq = findViewById(R.id.faq);
+        faqBtn = findViewById(R.id.faq);
+        twitterBtn = findViewById(R.id.twitter);
 
         // Generate an action for clicking button
-        faq.setOnClickListener(new View.OnClickListener() {
+        faqBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View vv) {
+            public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), ScrollingActivity.class));
             }
         });
@@ -43,8 +43,18 @@ public class MainActivity extends AppCompatActivity {
         scanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), com.example.qr_corona_tracker_app.Scanner.class));
+                startActivity(new Intent(getApplicationContext(), Scanner.class));
             }
         });
+
+        // Generate an action for clicking button
+        twitterBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent (getApplicationContext(), TwitterHandle.class));
+            }
+        });
+
+
     }
 }

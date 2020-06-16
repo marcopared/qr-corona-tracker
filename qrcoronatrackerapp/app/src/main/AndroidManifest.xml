@@ -18,6 +18,7 @@
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Scanner" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".TwitterHandle"/>
         <activity
             android:name=".Splash"
             android:label="@string/app_name"
