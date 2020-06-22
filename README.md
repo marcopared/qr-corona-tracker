@@ -2,7 +2,7 @@
 
 <h3>A QR-based Corona tracker Android application</h3>
 <br>  
-
+![alt text](https://github.com/mparedes3/qr-corona-tracker/blob/qr-corona-tracker/logo.jpg?raw=true)
 <h3>Developed and Tested by: Marco Paredes, Philip Emmanuele, Delilah Jacobsen, Rajvir Logani, and Ravi Johnson</h3>
 <br>
 
