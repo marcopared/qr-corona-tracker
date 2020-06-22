@@ -94,7 +94,11 @@ Overall, every person in our group has learned more about coding, specifically J
 
 <h3>References</h3>
 https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html
+
 https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html
+
 https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2-covid-19
+
 https://www.umms.org/coronavirus/what-to-know/treat-covid-at-home 
+
 https://www.blog.google/inside-google/company-announcements/apple-google-exposure-notification-api-launches/
