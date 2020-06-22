@@ -9,7 +9,18 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/windowBackground"
     tools:context=".Splash">
+
+    <!--
+    <alpha xmlns:android="http://schemas.android.com/apk/res/android"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0"
+        android:duration="1000"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        />
+    -->
 
     <ImageView
         android:id="@+id/icon_splash"
