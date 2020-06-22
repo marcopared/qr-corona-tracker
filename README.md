@@ -55,4 +55,46 @@
 
 - Class: Location
   - Private field: users - a HashMap that holds the userID of the user who scanned the QR code as a key and the time of which the QR code was scanned as the value
-  - Private field: QRcode - the tostring of the QR code for the specific location 
+  - Private field: QRcode - the tostring of the QR code for the specific location
+    - Method: recordUsers
+      - This method takes the users HashMap and puts its data into a text file which is saved to firebase
+    - Method: readUsers
+      - This method reads in the data from the use rstxt file in firebase and sets them as the parameter for the object (used in constructor)
+      
+- Class: User
+  - Private field: locations - a HashMap that holds the qr code of a location as a key and the time of which the QR code was scanned as the value
+  - Private static field: twoWeeks - a long that holds the number of milliseconds equivalent to two weeks (when risk of virus spreading in one area from a single individual is less)
+  - Private field userID - hold the user’s identification (in the form of a long) so that the app can recognize which user is logged in
+  - Private static field: availableLocations - a Hashmap that holds the qr code tostring of a location as the key and the location object reference (from location class) as the value 
+    - Method: addLocation
+      - This is the method that manages the data storage when a user scans the QR code. What this method does is it adds the qr tostring (as the key) and the time in which the QR code was scanned (using java’s Date class) to the private field hashmap “locations” if the QR code matches on of the keys in availableLocations
+      - Then, using the availableLocations HashMap, this method uses the key (the qr tostring) just entered into the locations hashmap to retrieve the location object reference in availableLocations, it then adds the user’s userID number and time of entry into the location objects “users’ private field/HashMap which is then saved to firebase using the recordLocations method
+      - After this it iterates through every item in the locations hashmap and removes every location entry that has been on the list for longer than two weeks 
+    - Method: recordLocations 
+      - This method takes the locations HashMap and puts its data into a text file which is saved to firebase
+    - Method: readLocations
+      - This method reads in the data from the locations txt file in firebase and sets them as the parameter for the object (used in constructor)
+    - Method: coronaAlert
+      - This method goes through every storthe the user has been to in the past two weeks, and using available locations goes through every locations users Hashmap and alerts all users that have been in those locations in the past two weeks that they have possibly been in contact with someone who has Coronavirus and that they should take precautions
+      
+The back end of this application handles all of the data storage and functionality of the QR scanner and alert button portions of the application. Basically once a User is identified using a User ID, they can do two functions, scan a QR code signifying entrance into a store location, or press the alert button to send out an anonymous tip that they have coronavirus. When starting up the app, all user and location objects are recreated given documentation in firebase. Once they are all recreated, a hashmap of all store location qr codes and references to those location objects is created which is recorded as a static variable for all user objects to have access to. A user can scan a QR code and the addLocation method will be called as described above. A user can also push the button to give an anonymous tip alerting all of the people who could have possibly been in contact with that person or the virus spread by that person by calling the method corona alert. There are also methods to record the current standings of all locations and users  to firebase and methods to read that information back in during the recreation of those objects in their constructor. 
+
+
+<h3>Market Evaluation</h3>
+
+Our product would be free on the app store and would be advertised by businesses that would hang QR codes in the storefront or immediately inside their business with our logo on it and a quick explanation of how the app works. Users would then download the app and use it at every business and/or public that has a designated QR code. When the user population reaches a critical mass, the app will be effective. This efficacy comes from users taking the recommended precautions in places where an individual that was diagnosed as COVID-19 positive had been and from users that had been in possible (direct or indirect) contact with the COVID-19 positive individual quarantining.
+
+<h3>Suggested Improvements</h3>
+
+Improvements we would want to make to the software are to make our program overall more efficient and effective. In the future given more time to learn how to program with different google API’s we would like to use applications like google maps to help with tracking but given our knowledge base we were only really able to do this more simplistic system. We’d probably also clean the app up a bit so it looks a little smoother and cleaner and add more attachments/widgets.
+
+<h3>Conclusion</h3>
+
+Overall, every person in our group has learned more about coding, specifically Java, and about what it takes to make an app. We have also learned a lot about the global situation and steps we can take on an individual level to prevent the spread of coronavirus. We have seen the development of an API from Apple and Android devices based on a similar concept. Their statement of their intent for “public health agencies [to] incorporate the API into their own apps” was encouraging to many but also fairly concerning. This leaves it open to the health care providers to include a service within their apps that offers coronavirus tracking and prompted the question of “what if health care providers do not develop an app to track coronavirus?” that urgently needs to be addressed. Through our app, we wanted to ensure that there was a coronavirus tracking app available in case health care providers chose not to develop one, and also to provide individuals that don’t have health insurance with the opportunity to also take part in the community effort to track and control the spread of coronavirus.
+
+<h3>References</h3>
+https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html
+https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html
+https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2-covid-19
+https://www.umms.org/coronavirus/what-to-know/treat-covid-at-home 
+https://www.blog.google/inside-google/company-announcements/apple-google-exposure-notification-api-launches/
