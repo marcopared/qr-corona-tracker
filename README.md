@@ -1,10 +1,11 @@
 <h1>Contact Tracer</h1>
 
 <h3>A QR-based Corona tracker Android application</h3>
+<br>  
 
 <h3>Developed and Tested by: Marco Paredes, Philip Emmanuele, Delilah Jacobsen, Rajvir Logani, and Ravi Johnson</h3>
 <br>
-<br>  
+
 <h3>Introduction</h3>
 
   Our ideas for this project stemmed from the desire to help others feel some semblance of control during this time. With the feeling of an invisible threat looming every time people leave the house, we wanted to allow for a way to trace the virus between communities and anonymously alert others of potential contact. The entire world is reeling and struggling to adjust to a new virus that could potentially stick around, a lengthy quarantine, and the subsequent anxieties and heightened emotions. Our hope has been to make an app that will give users reassurance and a sense of stability as we all navigate through new policies and this tragic threat.
