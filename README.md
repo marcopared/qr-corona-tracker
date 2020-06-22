@@ -5,10 +5,13 @@
 <br>
   
 <h3>Introduction</h3>
+
   Our ideas for this project stemmed from the desire to help others feel some semblance of control during this time. With the feeling of an invisible threat looming every time people leave the house, we wanted to allow for a way to trace the virus between communities and anonymously alert others of potential contact. The entire world is reeling and struggling to adjust to a new virus that could potentially stick around, a lengthy quarantine, and the subsequent anxieties and heightened emotions. Our hope has been to make an app that will give users reassurance and a sense of stability as we all navigate through new policies and this tragic threat.
 
 <h3>Purpose and Motivation</h3>
+
   With the high contagion risk of coronavirus, many are scared for their health and the health of their loved ones. Even if everyone were to obey social distancing as much as possible, sometimes going out can be unavoidable. Whether going to a park alone or to buy groceries, the unknown concern and risk associated with leaving one’s home can be overwhelming. Contact Tracer allows users to have more assurance and knowledge regarding whether or not there has been community spread of coronavirus to them. 
+
 
   One of the most common questions recently when speaking to health care workers is “have you had recent contact with a person with diagnosed coronavirus?” This can oftentimes be a difficult question to answer because of the possibility that one unknowingly came into contact with a person that has COVID-19 or that a family member was diagnosed and did not come forward about their results. By scanning a QR code at stores and other public locations, Contact Tracer will allow for users' locations to be saved and, in the event that they are diagnosed with COVID-19, they can alert Contact Tracer. Contact Tracer will then alert all users that they have come into contact with an anonymous individual that was diagnosed with COVID-19. A benefit to this is that it will also encourage users to stay inside if they have had contact with anyone that ended up being diagnosed with coronavirus, thus preventing further spread.
 
@@ -35,4 +38,20 @@
 - Ravi Johnson: QR code
 
 <h3>Difficulties and Challenges</h3>
+
   Some of us didn’t (or still don’t) know how to code in Java so that was a major challenge we faced. We were able to overcome this through individuals teaching themselves how to code through research, such as looking up Java-teaching programs, and by messing with the code to see how it worked and what different tweaks resulted in. Since many functions were initially unknown and foreign, we had to look up many of them and try to manipulate them to work in the way that we wanted. The hardest part was the Java-specific syntax, but by playing with it and taking Android Studio’s suggestions, we were able to produce code that did not contain any errors. 
+  
+  
+  We wanted to use a more passive data collection method such as the app accessing the users’ location. However, due to the limited resources of time and experience, we figured that this way wouldn’t be feasible. Instead, we opted to use a more inconvenient, but easier to code method of data collection by using QR codes.
+  
+  
+  This was also the first time that almost everyone in the group was working with a large amount of data that had to be stored in the cloud. Therefore, it was a big challenge to learn JSON, learn how to store things in the cloud, and then implement that knowledge to fit our needs. 	
+  
+  
+  Another challenge that we faced was how we wanted to implement the backend of the software. We ran through three or four ideas on how to implement it using firebase but most of them were either too complicated or we realised that they would fail after delving into them. This is the model for the final back-end program we decided on using because of our ideas it was the most efficient and effective:
+  
+ 
+<h3>Back-End</h3>
+
+- Class: Location
+  - Private field: users - a HashMap that holds the userID of the user who scanned the QR code as a key and the time of which the QR code was scanned as the value
