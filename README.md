@@ -55,3 +55,4 @@
 
 - Class: Location
   - Private field: users - a HashMap that holds the userID of the user who scanned the QR code as a key and the time of which the QR code was scanned as the value
+  - Private field: QRcode - the tostring of the QR code for the specific location 
