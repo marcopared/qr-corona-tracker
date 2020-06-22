@@ -46,7 +46,7 @@ public class Splash extends AppCompatActivity {
             public void run() { // Run function repeats every 100 ms
                 // Variable progress gets updated every 100 ms until it reaches 100
                 if (progress < 100) {
-                    progressBar.setProgressWithAnimation(progress);
+                    progressBar.setProgress(progress);
                     progress += 2;
                 } else { // Reached end of progress
                     timer.cancel();
