@@ -14,6 +14,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.os.Bundle;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -25,7 +26,7 @@ import java.util.TimerTask;
 
 public class Splash extends AppCompatActivity {
     private Timer timer;
-    private ImageView contentView;
+    private ImageView icon;
     private CircularProgressBar progressBar;
     private int progress = 0;
 
@@ -34,9 +35,15 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        // Set imageView
+        //icon.setAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.nav_default_enter_anim));
+
         // Create and begin circular progress bar
         progressBar = (CircularProgressBar)findViewById(R.id.custom_progressBar);
         progressBar.setProgress(0);
+
+        // Fade in
+
 
         final long period = 100; // long variable used to set time limit of progress bar
         timer = new Timer();
@@ -46,7 +53,7 @@ public class Splash extends AppCompatActivity {
                 // This repeats every 100 ms
                 if (progress < 100) {
                     progressBar.setProgress(progress);
-                    ++progress;
+                    progress += 1;
                 } else {
                     // Closing the timer
                     timer.cancel();
