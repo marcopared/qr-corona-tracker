@@ -93,6 +93,7 @@ Improvements we would want to make to the software are to make our program overa
 Overall, every person in our group has learned more about coding, specifically Java, and about what it takes to make an app. We have also learned a lot about the global situation and steps we can take on an individual level to prevent the spread of coronavirus. We have seen the development of an API from Apple and Android devices based on a similar concept. Their statement of their intent for “public health agencies [to] incorporate the API into their own apps” was encouraging to many but also fairly concerning. This leaves it open to the health care providers to include a service within their apps that offers coronavirus tracking and prompted the question of “what if health care providers do not develop an app to track coronavirus?” that urgently needs to be addressed. Through our app, we wanted to ensure that there was a coronavirus tracking app available in case health care providers chose not to develop one, and also to provide individuals that don’t have health insurance with the opportunity to also take part in the community effort to track and control the spread of coronavirus.
 
 <h3>References</h3>
+
 https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html
 
 https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html
