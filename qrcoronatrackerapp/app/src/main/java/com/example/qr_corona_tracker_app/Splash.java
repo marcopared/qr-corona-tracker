@@ -54,14 +54,9 @@ public class Splash extends AppCompatActivity {
                 // Variable progress gets updated every 100 ms until it reaches 100
                 if (progress < 100) {
                     progressBar.setProgress(progress);
-<<<<<<< HEAD
-                    progress += 2;
                 } else { // Reached end of progress
-=======
                     progress += 1;
-                } else {
                     // Closing the timer
->>>>>>> master
                     timer.cancel();
                     // Will transition to MainActivity
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
