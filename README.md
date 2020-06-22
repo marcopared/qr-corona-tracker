@@ -13,6 +13,7 @@
   One of the most common questions recently when speaking to health care workers is “have you had recent contact with a person with diagnosed coronavirus?” This can oftentimes be a difficult question to answer because of the possibility that one unknowingly came into contact with a person that has COVID-19 or that a family member was diagnosed and did not come forward about their results. By scanning a QR code at stores and other public locations, Contact Tracer will allow for users' locations to be saved and, in the event that they are diagnosed with COVID-19, they can alert Contact Tracer. Contact Tracer will then alert all users that they have come into contact with an anonymous individual that was diagnosed with COVID-19. A benefit to this is that it will also encourage users to stay inside if they have had contact with anyone that ended up being diagnosed with coronavirus, thus preventing further spread.
 
 <h3>Step-By-Step Instructions</h3>
+
 1. Open the app
 
 2. Go to a store or other public location and scan the designated QR code for every public location that you go to 
@@ -22,6 +23,7 @@
 4. The app is also useful if you are not diagnosed with COVID-19. It will alert you if  someone you were in contact with ended up being diagnosed with coronavirus. This is why it is important to turn on notifications. 
 
 <h3>Team Member Roles and Contributions</h3>
+
 - Philip Emmanuele: This was my first time working with both Android App Studio and the coding language of Java. Therefore, I took more time to do tasks that weren’t very complicated. During this project, I mostly worked on coming up with ideas as well as various front end tasks. For example, I implemented the code that made the “twitter” page of our app possible and accessible. In addition, I also implemented the navigation bar at the bottom of the screen. 
 
 - Delilah Jacobsen: My primary contributions were writing the non-coding related portions of our app and the design of our logo. In regards to the writing I did, the majority of the work revolved around researching COVID-19 to produce a section within our app about the effects of COVID-19 and relevant questions that any users may have. To produce our finalized logo, I drew a total of 4 different designs to give our team options to decide on. From there, I edited and finalized the logo based on our predetermined color scheme.
